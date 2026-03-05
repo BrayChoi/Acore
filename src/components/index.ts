@@ -1,0 +1,8 @@
+export { Navigation } from './Navigation'
+export { Hero } from './Hero'
+export { Features } from './Features'
+export { InteractiveDemo } from './InteractiveDemo'
+export { Resources } from './Resources'
+export { Team } from './Team'
+export { Contact } from './Contact'
+export { Footer } from './Footer'
