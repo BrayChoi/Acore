@@ -275,7 +275,7 @@ function DashboardTab() {
   )
 }
 
-function VendorsTab({ vendors, selectedVendor, setSelectedVendor }: { vendors: typeof vendors, selectedVendor: number | null, setSelectedVendor: (id: number | null) => void }) {
+function VendorsTab({ vendors, selectedVendor, setSelectedVendor }: { vendors: any[], selectedVendor: number | null, setSelectedVendor: (id: number | null) => void }) {
   return (
     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.3 }}>
       <div className="flex items-center justify-between mb-6">
@@ -322,7 +322,7 @@ function VendorsTab({ vendors, selectedVendor, setSelectedVendor }: { vendors: t
   )
 }
 
-function ComplianceTab({ obligations }: { obligations: typeof obligations }) {
+function ComplianceTab({ obligations }: { obligations: any[] }) {
   return (
     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.3 }}>
       <div className="flex items-center justify-between mb-6 flex-wrap gap-2">
@@ -348,7 +348,7 @@ function ComplianceTab({ obligations }: { obligations: typeof obligations }) {
   )
 }
 
-function DocumentsTab({ documents }: { documents: typeof documents }) {
+function DocumentsTab({ documents }: { documents: any[] }) {
   return (
     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.3 }}>
       <div className="flex items-center justify-between mb-6">
@@ -378,7 +378,7 @@ function DocumentsTab({ documents }: { documents: typeof documents }) {
   )
 }
 
-function CoopTab({ data }: { data: typeof coopData }) {
+function CoopTab({ data }: { data: any }) {
   return (
     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.3 }}>
       <h2 className="text-xl font-semibold mb-6">Co-op Management</h2>
