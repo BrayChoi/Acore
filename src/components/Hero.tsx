@@ -36,7 +36,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
             </span>
             <span className="text-sm text-white/70">
-              Now serving 500+ small businesses
+              Now serving small businesses
             </span>
           </motion.div>
 
