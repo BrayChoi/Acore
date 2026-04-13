@@ -50,8 +50,7 @@ function TeamMember({ member, index }: { member: typeof team[0]; index: number }
 
       <div className="flex items-center justify-center gap-2 md:gap-3 mt-3 md:mt-4">
         {member.socials.map((social) => (
-          
-            key={social.platform}
+            <a key={social.platform}
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
