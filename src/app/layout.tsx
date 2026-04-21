@@ -2,13 +2,19 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Acore | Compliance Management for Small Business',
-  description: 'Acore helps small businesses manage compliance across expenses, utilities, and vendor relationships. Simplify your monthly compliance without an HR team.',
-  keywords: ['compliance', 'small business', 'expense management', 'utilities', 'vendor management'],
+  title: 'Acore — The compliance layer for your restaurant',
+  description: 'Centralize every vendor contract, COI, permit, and co-op obligation in one control plane. Built for independent restaurant operators.',
   openGraph: {
-    title: 'Acore | Compliance Management for Small Business',
-    description: 'Simplify your monthly compliance without an HR team.',
+    title: 'Acore — The compliance layer for your restaurant',
+    description: 'Centralize every vendor contract, COI, permit, and co-op obligation in one control plane.',
+    url: 'https://acorehq.com',
+    siteName: 'Acore',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Acore — The compliance layer for your restaurant',
+    description: 'Centralize every vendor contract, COI, permit, and co-op obligation in one control plane.',
   },
 }
 
@@ -18,11 +24,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="antialiased">
-      <body className="bg-surface text-white min-h-screen">
-        <div className="noise-overlay" aria-hidden="true" />
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   )
 }

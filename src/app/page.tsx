@@ -1,39 +1,22 @@
-import {
-  Navigation,
-  Hero,
-  Features,
-  InteractiveDemo,
-  Resources,
-  Team,
-  Contact,
-  Footer,
-} from '@/components'
+import { Navigation } from '@/components/Navigation'
+import { Hero } from '@/components/Hero'
+import { WhyAcore } from '@/components/WhyAcore'
+import { Features } from '@/components/Features'
+import { InteractiveDemo } from '@/components/InteractiveDemo'
+import { Team } from '@/components/Team'
+import { Contact } from '@/components/Contact'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="relative">
-      {/* Navigation - Sticky header */}
+    <main className="min-h-screen bg-black text-white">
       <Navigation />
-      
-      {/* Hero - Main headline and product preview */}
       <Hero />
-      
-      {/* Features - 6 feature cards */}
+      <WhyAcore />
       <Features />
-      
-      {/* Interactive Demo - Clickable product demo */}
       <InteractiveDemo />
-      
-      {/* Resources - Guides, case studies, documentation */}
-      <Resources />
-      
-      {/* Team - Team members with social links */}
       <Team />
-      
-      {/* Contact/Waitlist - Join waitlist form */}
       <Contact />
-      
-      {/* Footer - Links and social */}
       <Footer />
     </main>
   )
